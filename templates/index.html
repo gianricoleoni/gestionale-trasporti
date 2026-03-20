@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Gestionale Trasporti</title>
+    <style>
+        body { font-family: Arial; background:#f4f4f4; padding:40px;}
+        .box { background:white; padding:20px; border-radius:10px; max-width:500px; margin:auto;}
+        input, button { width:100%; padding:10px; margin:5px 0;}
+        button { background:#007bff; color:white; border:none;}
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Preventivo Trasporto</h2>
+
+```
+<form method="post">
+    <input name="cliente" placeholder="Cliente">
+    <input name="partenza" placeholder="Partenza">
+    <input name="scarico" placeholder="Scarico">
+    <input name="rientro" placeholder="Rientro">
+    <button type="submit">Calcola</button>
+</form>
+
+{% if risultato %}
+    <h3>Risultato</h3>
+    <p>Km: {{ risultato.km }}</p>
+    <p>Totale €: {{ risultato.totale }}</p>
+{% endif %}
+
+<h3>Storico</h3>
+{% for r in storico %}
+    <p>{{ r.cliente }} - {{ r.km }} km - €{{ r.totale }}</p>
+{% endfor %}
+```
+
+</div>
+
+</body>
+</html>
