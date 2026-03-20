@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__)
+app = Flask(**name**)
 
 API_KEY = "AIzaSyAI1p00jSenVAcgtHYfKskdQokCgJwljVs"
 
@@ -39,8 +39,8 @@ if request.method == "POST":
     
     risultato = {
         "cliente": cliente,
-        "km": round(tot_km,2),
-        "totale": round(totale,2)
+        "km": round(tot_km, 2),
+        "totale": round(totale, 2)
     }
     
     storico.append(risultato)
@@ -48,5 +48,5 @@ if request.method == "POST":
 return render_template("index.html", risultato=risultato, storico=storico)
 ```
 
-if __name__ == "__main__":
-    app.run()
+if **name** == "**main**":
+app.run()
