@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import requests
 
-app = Flask(**name**)
+app = Flask(__name__)
 
 API_KEY = "AIzaSyAI1p00jSenVAcgtHYfKskdQokCgJwljVs"
 
