@@ -3,7 +3,7 @@ import requests
 
 app = Flask(**name**)
 
-API_KEY = "INSERISCI_LA_TUA_API_KEY"
+API_KEY = "AIzaSyAI1p00jSenVAcgtHYfKskdQokCgJwljVs"
 
 storico = []
 
