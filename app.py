@@ -48,4 +48,5 @@ if request.method == "POST":
 return render_template("index.html", risultato=risultato, storico=storico)
 ```
 
-app.run(host="0.0.0.0", port=10000)
+if __name__ == "__main__":
+    app.run()
